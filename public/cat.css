@@ -1,0 +1,16 @@
+img.cat {
+	position: fixed;
+	bottom: 0;
+	right: 5vw;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 500ms;
+	filter: drop-shadow(2px 4px 6px black);
+	z-index: -1;
+}
+
+canvas.cat {
+	position: fixed;
+	opacity: 0;
+	transition: opacity 500ms;
+}

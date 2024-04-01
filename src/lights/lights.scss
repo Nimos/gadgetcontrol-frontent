@@ -1,0 +1,36 @@
+.lights-buttons {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin: auto;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+
+.script-button {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(51,51,51);
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 9px 7px 18px 2px black;
+    border: 2px solid #996bef;
+    width: 25%;
+    min-width: 150px;
+    max-width: 100%;
+    box-sizing: content-box;
+    flex-grow: 1;
+
+    &.loading {
+        cursor: wait;
+        background-color: rgb(128, 128, 127);
+        border-color: black;
+    }
+
+    &.active {
+        border-color: green;
+    }
+
+    cursor: pointer;
+}
