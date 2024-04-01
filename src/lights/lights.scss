@@ -8,6 +8,20 @@
     margin-top: 10px;
 }
 
+@keyframes glow {
+    0% {
+        border-color: lighten(#996bef, 10%);
+        border-width: 3px;
+    }
+    50% {
+        border-color: lighten(#996bef, 30%);
+    }
+    100% {
+        border-color: lighten(#996bef, 10%);
+        border-width: 3px;
+    }
+}
+
 .script-button {
     display: flex;
     align-items: flex-start;
@@ -29,7 +43,9 @@
     }
 
     &.active {
-        border-color: green;
+        animation: glow 3000ms linear infinite;
+        font-weight: bold;
+        color: lighten(#996bef, 10%);
     }
 
     cursor: pointer;
