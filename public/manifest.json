@@ -3,12 +3,12 @@
   "name": "Hannah's Gadget Control",
   "icons": [
     {
-      "src": "%PUBLIC_URL%/logo.svg",
+      "src": "/logo.svg",
       "sizes": "any",
       "type": "image/svg"
     },
     {
-      "src": "%PUBLIC_URL%/logo-256px.png",
+      "src": "/logo-256px.png",
       "sizes": "256x256",
       "type": "image/png"
     }
