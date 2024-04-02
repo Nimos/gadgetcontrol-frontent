@@ -1,0 +1,32 @@
+input.login-prompt {
+    padding: 10px 20px;
+    border-radius: 20px;
+    flex-grow: 1;
+    font-size: 2rem;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 3px solid #996bef;
+    background-color: #fff;
+}
+
+.login-prompt-wrapper {
+    display: flex;
+}
+
+button.login-submit {
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    margin-top: 10px;
+    margin-left:  10px;
+    background-color: #996bef;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

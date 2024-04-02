@@ -1,3 +1,4 @@
 {
-    "LIGHTS_URL": "https://hub.home.nimos.ws/lights"
+    "LIGHTS_URL": "https://hub.home.nimos.ws/lights",
+    "AUTH_URL": "https://hub.home.nimos.ws/auth"
 }
