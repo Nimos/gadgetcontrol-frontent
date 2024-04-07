@@ -7,6 +7,31 @@ input.login-prompt {
     margin-top: 10px;
     border: 3px solid #996bef;
     background-color: #fff;
+    &.has-error {
+        border-color: #ee0000;
+        animation: login-error-shake 500ms linear;
+    }
+}
+
+@keyframes login-error-shake {
+    0% {
+        transform: translatex(0px)
+    }
+    20% {
+        transform: translatex(-5px)
+    }
+    40% {
+        transform: translatex(5px)
+    }
+    60% {
+        transform: translatex(-5px)
+    }
+    80% {
+        transform: translatex(5px)
+    }
+    100% {
+        transform: translatex(0px)
+    }
 }
 
 .login-prompt-wrapper {
