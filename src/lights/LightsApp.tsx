@@ -7,7 +7,7 @@ import BaseApp from "../BaseApp";
 import { authFetch } from "../utils";
 
 export default function LightsApp(props: {onError: Function}) {
-    const [lightsScripts, setLightScripts] = useState<ScriptInfo[]>([]);
+    const [lightsScripts, setLightScripts] = useState<ScriptInfo[]>(JSON.parse(localStorage.getItem("lights_scripts_list") ?? "[]"));
 
 
     async function updateLights() {
@@ -16,9 +16,11 @@ export default function LightsApp(props: {onError: Function}) {
 
         if (scripts.error) {
             props.onError(scripts.message);
+            return;
         }
 
         setLightScripts(scripts);
+        localStorage.setItem("lights_scripts_list", JSON.stringify(scripts))
     }
 
     async function runScript(name: string) {
